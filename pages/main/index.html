@@ -18,26 +18,26 @@
                 </div>
                 <nav>
                     <ul class="nav">
-                        <li class="li-about active">About the shelter</li>
-                        <li class="li-pets">Our pets</li>
-                        <li class="li-help">Help the shelter</li>
-                        <li class="li-contacts">Contacts</li>
+                        <li class="li-about active"> <a href="#about">About the shelter</a></li>
+                        <li class="li-pets"><a href="/pages/pets/index.html">Our pets</a></li>
+                        <li class="li-help"><a href="#help">Help the shelter</a></li>
+                        <li class="li-contacts"><a href="#contacts">Contacts</a></li>
                         </ul>
                 </nav>
             </header>
         </div>
         <div class="wrap">
-            <section class="hero">
+            <section class="hero" id="about">
                 <div class="hero-text">
                     <h2>Not only people need&#160;a&#160;house</h2>
                     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <a href="#" role="button">Make a friend</a>
+                    <a href="#friends" role="button">Make a friend</a>
                 </div>
                 <img src="/assets/images/start-screen-puppy.png" alt="cute dog">
             </section>
         </div>
     </div>
-    <div class="wrap" id="call">
+    <div class="wrap">
         <section class="section-about">
             <img src="/assets/images/about-pets.png" alt="cat and dog">
             <div>
@@ -49,7 +49,7 @@
     </div>
     <div class="bg-grey">
         <div class="wrap">
-            <section class="section-friends">
+            <section class="section-friends" id="friends">
                 <h3>Our friends who are&#160;looking&#160;for a house</h3>
                 <div class="slider">
                     <button class="arrow-left"><img src="/assets/icons/Arrow.svg" alt="arrow"></button>
@@ -72,12 +72,12 @@
                      </div>
                     <button class="arrow-rigth"><img src="/assets/icons/Arrow.svg" alt="arrow"></button>
                 </div>
-                <a href="#" role="button" class="btn-friends">Get to know the rest</a>              
+                <a href="/pages/pets/index.html" role="button" class="btn-friends">Get to know the rest</a>              
             </section>
         </div>
     </div>
     <div class="wrap">
-        <section class="section-help">
+        <section class="section-help" id="help">
             <h3>How&#160;you&#160;can&#160;help our&#160;shelter</h3>
             <div class="grid">
                 <div>
@@ -137,25 +137,25 @@
     </div>
     <div class="bg-gradient-footer">
         <div class="wrap">
-            <footer>
+            <footer id="contacts">
                 <div>
                     <h3>For&#160;questions and&#160;suggestions</h3>
-                    <a href="">
+                    <a href="mailto:email@shelter.com">
                         <img src="/assets/icons/icon-email.svg" alt="email icon">
                         <h4>email@shelter.com</h4>
                     </a>
-                    <a href="">
+                    <a href="tel:+136745677554">
                         <img src="/assets/icons/icon-phone.svg" alt="phone icon">
                         <h4>+13 674 567 75 54</h4>
                     </a>
                 </div>
                 <div>
                     <h3>We&#160;are&#160;waiting for&#160;your&#160;visit</h3>
-                    <a href="">
+                    <a href="https://goo.gl/maps/KzFVEG9F5pqgEhkT7">
                         <img src="/assets/icons/icon-marker.svg" alt="location icon">
                         <h4>1 Central Street, Boston (entrance&#160;from&#160;the&#160;store)</h4>
                     </a>
-                    <a href="">
+                    <a href="https://goo.gl/maps/KzFVEG9F5pqgEhkT7">
                         <img src="/assets/icons/icon-marker.svg" alt="location icon">
                         <h4>18 South Park, London</h4>
                     </a>
@@ -164,6 +164,6 @@
             </footer>
         </div>
     </div>
-    <script src="index.js"></script>  
+    <script src="/pages/main/script.js"></script>  
 </body>
 </html>

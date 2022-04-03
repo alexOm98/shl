@@ -1,0 +1,241 @@
+$color-primary: #F1CDB3;
+$color-light-xl: #FFFFFF;
+$color-dark-s: #CDCDCD;
+$color-dark-3xl: #292929;
+$color-dark-xl: #4C4C4C;
+$color-light-l: #F6F6F6;
+$color-light-s: #FAFAFA;
+$color-dark-l: #545454;
+$color-dark-2xl: #444444;
+$color-primary-light: #FDDCC4;
+$color-dark-m: #B2B2B2;
+
+html {
+    scroll-behavior: smooth;
+}
+.bg-white{
+    background-color: $color-light-xl;
+    position: sticky;
+}
+.wrap{
+	margin: 0 auto;
+	padding: 0 40px;
+	max-width: 1200px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0px;
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	h1{
+		margin: 0px;
+		color: $color-dark-l;
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 110%;
+		letter-spacing: 0.06em;
+	}
+	span{
+		color: $color-dark-3xl;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 15px;
+		letter-spacing: 0.1em;
+	}
+}
+.nav{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	color: $color-dark-l;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	gap: 35px;
+	a {
+		text-decoration: none;
+        color: $color-dark-l;
+	}
+	a:hover{
+		cursor: pointer;
+		color: $color-dark-3xl;
+	}
+	.active{
+		border-bottom: solid 3px $color-primary;
+		color: $color-dark-l;
+	}
+}
+
+.bg-grey{
+	background-color: $color-light-l;
+}
+.section-friends{
+	padding: 80px 0px 100px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	gap: 45px;
+	
+
+	h3{
+		margin: 0px;
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+		color: $color-dark-l;
+		max-width: 400px;
+		text-align: center;
+	}
+}
+.slider {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.cards{
+	display: flex;
+	gap: 30px 40px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+	.card {
+		height: 435px;
+		width: 270px;
+		left: 465px;
+		top: 0px;
+		border-radius: 9px;
+		background-color: $color-light-s;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		&:hover{
+			cursor: pointer;
+			box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+		}
+	}
+	span {
+		color: $color-dark-l;
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 0.06em;
+	
+	}
+	a{
+		text-decoration: none;
+		color: $color-dark-3xl;
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+		border-radius: 100px;
+		padding: 13px 42px;
+		border: solid 2px #F1CDB3;
+		&:hover{
+			background-color: $color-primary-light;
+			transition: all 0.3s ease-out;;
+		}
+
+	}
+}
+.btns{
+    display: flex;
+    gap: 20px;
+    button{
+        border-radius: 100px;
+		width: 52px;
+		height: 52px;
+        background-color: transparent;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        border: 2px solid $color-primary;
+        &:hover{
+            cursor: pointer;
+            background-color: $color-primary-light;
+        }
+    }
+    .none{
+        background-color: transparent;
+        border: 2px solid $color-dark-s;
+        &:hover{
+            cursor: default;
+            background-color: transparent;
+        }
+    }
+}
+.bg-gradient-footer{
+	background: url(/assets/icons/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	
+	padding-top: 40px;
+	gap: 160px;
+	div{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 16px;
+		width: fit-content;
+		margin-bottom: 60px;
+	}
+	h3{
+		margin: 0px;
+		color: $color-light-xl;
+		font-family: Georgia;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		line-height: 130%;
+		letter-spacing: 0.06em;
+		width: 278px;
+	}
+	a{
+		text-decoration: none;
+		display: flex;
+		text-decoration: none;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		width: fit-content;
+		text-decoration: none;
+		h4{
+			margin: 0px;
+			color: $color-primary;
+			font-family: Georgia;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 115%;
+			letter-spacing: 0.06em;
+		}
+
+	}
+}
