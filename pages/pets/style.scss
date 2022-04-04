@@ -15,7 +15,8 @@ html {
 }
 .bg-white{
     background-color: $color-light-xl;
-    position: sticky;
+	position: sticky;
+	top: 0px;
 }
 .wrap{
 	margin: 0 auto;
@@ -87,9 +88,7 @@ html {
 	justify-content: center;
     flex-direction: column;
     align-items: center;
-	gap: 45px;
-	
-
+	gap: 60px;
 	h3{
 		margin: 0px;
 		font-family: Georgia;
@@ -113,8 +112,6 @@ html {
 	display: flex;
 	gap: 30px 40px;
     flex-wrap: wrap;
-    margin-top: 15px;
-
 	.card {
 		height: 435px;
 		width: 270px;
@@ -128,7 +125,12 @@ html {
 		gap: 30px;
 		&:hover{
 			cursor: pointer;
-			box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+			background-color: $color-light-xl;
+			a{
+				background-color: $color-primary-light;
+				transition: all 0.3s ease-out;
+				border: solid 2px $color-primary-light;
+			}
 		}
 	}
 	span {
@@ -153,11 +155,6 @@ html {
 		border-radius: 100px;
 		padding: 13px 42px;
 		border: solid 2px #F1CDB3;
-		&:hover{
-			background-color: $color-primary-light;
-			transition: all 0.3s ease-out;;
-		}
-
 	}
 }
 .btns{
@@ -178,14 +175,19 @@ html {
         &:hover{
             cursor: pointer;
             background-color: $color-primary-light;
-        }
+			border-color: $color-primary-light;
+		}
     }
+	.number{
+		background-color: $color-primary;
+	}
     .none{
         background-color: transparent;
         border: 2px solid $color-dark-s;
         &:hover{
             cursor: default;
             background-color: transparent;
+			border: 2px solid $color-dark-s;
         }
     }
 }
@@ -195,15 +197,13 @@ html {
 footer{
 	display: flex;
 	flex-direction: row;
-	
 	padding-top: 40px;
-	gap: 160px;
+	column-gap: 160px;
 	div{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		margin-top: 16px;
-		width: fit-content;
 		margin-bottom: 60px;
 	}
 	h3{
@@ -224,7 +224,6 @@ footer{
 		flex-direction: row;
 		align-items: center;
 		gap: 20px;
-		width: fit-content;
 		text-decoration: none;
 		h4{
 			margin: 0px;
@@ -237,5 +236,26 @@ footer{
 			letter-spacing: 0.06em;
 		}
 
+	}
+}
+@media (max-width: 1279px) {
+	footer{
+		padding-top: 30px;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		column-gap: normal;
+		row-gap: 65px;
+		div{
+			margin: 0px;
+			&:first-child{
+				gap: 40px;
+			}
+			&:nth-child(2){
+				gap: 33px;
+				width: 302px;
+			}
+		}
 	}
 }

@@ -5,6 +5,7 @@ html {
 .bg-white {
   background-color: #FFFFFF;
   position: sticky;
+  top: 0px;
 }
 
 .wrap {
@@ -106,7 +107,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 45px;
+  gap: 60px;
 }
 .section-friends h3 {
   margin: 0px;
@@ -141,7 +142,6 @@ html {
   gap: 30px 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 15px;
 }
 .cards .card {
   height: 435px;
@@ -164,8 +164,13 @@ html {
 }
 .cards .card:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background-color: #FFFFFF;
+}
+.cards .card:hover a {
+  background-color: #FDDCC4;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: solid 2px #FDDCC4;
 }
 .cards span {
   color: #545454;
@@ -188,11 +193,6 @@ html {
   border-radius: 100px;
   padding: 13px 42px;
   border: solid 2px #F1CDB3;
-}
-.cards a:hover {
-  background-color: #FDDCC4;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
 }
 
 .btns {
@@ -217,6 +217,10 @@ html {
 .btns button:hover {
   cursor: pointer;
   background-color: #FDDCC4;
+  border-color: #FDDCC4;
+}
+.btns .number {
+  background-color: #F1CDB3;
 }
 .btns .none {
   background-color: transparent;
@@ -225,6 +229,7 @@ html {
 .btns .none:hover {
   cursor: default;
   background-color: transparent;
+  border: 2px solid #CDCDCD;
 }
 
 .bg-gradient-footer {
@@ -240,7 +245,9 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-top: 40px;
-  gap: 160px;
+  -webkit-column-gap: 160px;
+     -moz-column-gap: 160px;
+          column-gap: 160px;
 }
 footer div {
   display: -webkit-box;
@@ -254,9 +261,6 @@ footer div {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 16px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 60px;
 }
 footer h3 {
@@ -284,9 +288,6 @@ footer a {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   text-decoration: none;
 }
 footer a h4 {
@@ -298,4 +299,33 @@ footer a h4 {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+
+@media (max-width: 1279px) {
+  footer {
+    padding-top: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    -webkit-column-gap: normal;
+       -moz-column-gap: normal;
+            column-gap: normal;
+    row-gap: 65px;
+  }
+  footer div {
+    margin: 0px;
+  }
+  footer div:first-child {
+    gap: 40px;
+  }
+  footer div:nth-child(2) {
+    gap: 33px;
+    width: 302px;
+  }
 }
